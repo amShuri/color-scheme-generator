@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+        <title>Color Scheme Generator</title>
+    </head>
+    <body>
+        <main>
+            <form>
+                <label for="color-input" class="sr-only">
+                    Choose a base color
+                </label>
+                <input 
+                    type="color"
+                    value="#F55A5A"
+                    id="color-input"
+                    class="color-input">
+                
+                <label for="scheme-select" class="sr-only">
+                    Choose a color scheme
+                </label>
+                <select class="scheme-select" id="scheme-select"></select>
+                
+                <button 
+                    type="button"
+                    id="submit-btn"
+                    class="submit-btn">
+                    Get color scheme
+                </button>
+            </form>
+            
+            <ul class="palette" id="palette">
+                <li class="palette-color color-1">
+                    <button 
+                        data-hex="#F55A5A"
+                        aria-label="Copy color F55A5A to clipboard">
+                        #F55A5A
+                    </button>
+                </li>
+                <li class="palette-color color-2">
+                    <button 
+                        data-hex="#2B283A"
+                        aria-label="Copy color 2B283A to clipboard">
+                        #2B283A
+                    </button>
+                </li>
+                <li class="palette-color color-3">
+                    <button 
+                        data-hex="#FBF3AB"
+                        aria-label="Copy color FBF3AB to clipboard">
+                        #FBF3AB
+                    </button>
+                </li>
+                <li class="palette-color color-4">
+                    <button 
+                        data-hex="#AAD1B6"
+                        aria-label="Copy color AAD1B6 to clipboard">
+                        #AAD1B6
+                    </button>
+                </li>
+                <li class="palette-color color-5">
+                    <button 
+                        data-hex="#A626D3"
+                        aria-label="Copy color A626D3 to clipboard">
+                        #A626D3
+                    </button>
+                </li>
+            </ul>
+        </main>
+        
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
