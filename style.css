@@ -134,11 +134,11 @@ form {
     position: absolute;
     bottom: 0;
     opacity: 0;
+    transition: opacity 0.65s;
 }
 
 .palette-color:hover button {
     opacity: 1;
-    transition: opacity 0.65s;
 }
 
 /* ===============
