@@ -24,6 +24,10 @@ body {
     width: 100%;
 }
 
+main {
+    position: relative;
+}
+
 button {
     background: none;
     border: none;
@@ -175,6 +179,31 @@ form {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+.copy-message {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+
+    background: rgba(0, 0, 0, 0.75);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(6px);
+    border-radius: 4px;
+    color: #fff;
+
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.copy-message.show {
+    opacity: 1;
 }
 
 /* ===============
